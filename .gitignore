@@ -102,3 +102,6 @@ ENV/
 
 # Jupyter notebooks
 .ipynb_checkpoints/
+
+
+.DS_Store
