@@ -1,4 +1,4 @@
-# Repositorio de Diplomatura Diplo Datos FAMAF
+# Repositorio de  Diplo Datos FAMAF - Renzo Bechler y Manuel Aliaga
 
 
 ### Analisis y Curacion
