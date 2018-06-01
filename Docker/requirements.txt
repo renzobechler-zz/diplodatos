@@ -1,0 +1,9 @@
+﻿ipython
+numpy 
+scipy 
+matplotlib 
+pandas 
+ftfy 
+scikit-learn 
+jupyter 
+seaborn 
