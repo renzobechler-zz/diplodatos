@@ -6,21 +6,18 @@ RUN bash Miniconda3-latest-Linux-x86_64.sh -b -p /tmp/miniconda
 
 ENV PATH="$PATH:/tmp/miniconda/bin" 
 
-RUN echo $PATH
+RUN conda install python=3.5 numpy scipy jupyter nb_conda 
 
-RUN conda create --name diplodatos-ayv python=3.5 numpy scipy jupyter nb_conda && source activate diplodatos-ayv
+#RUN source /tmp/miniconda/bin/activate diplodatos-ayv
 
-#RUN source activate 
+#EXPOSE 8892
 
-EXPOSE 8892
+RUN mkdir -p /src/LabBechlerAliaga/
 
-RUN echo $PATH
+RUN cd /src/LabBechlerAliaga/
 
-#RUN mkdir -p /src/LabBechlerAliaga/
+RUN git clone https://github.com/renzobechler/diplodatos.git
 
-#RUN cd /src/LabBechlerAliaga/
+RUN cd diplodatos/AnalisisYCuracion
 
-#RUN git clone https://github.com/renzobechler/diplodatos.git
-
- 
- 
+ENTRYPOINT jupyter notebook --no-browser --ip=0.0.0.0 --allow-root
