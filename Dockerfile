@@ -10,7 +10,7 @@ RUN conda install python=3.5 numpy scipy jupyter nb_conda
 
 #RUN source /tmp/miniconda/bin/activate diplodatos-ayv
 
-#EXPOSE 8892
+EXPOSE 8888
 
 RUN mkdir -p /src/LabBechlerAliaga/
 
@@ -20,4 +20,4 @@ RUN git clone https://github.com/renzobechler/diplodatos.git
 
 RUN cd diplodatos/AnalisisYCuracion
 
-ENTRYPOINT jupyter notebook --no-browser --ip=0.0.0.0 --allow-root
+#ENTRYPOINT jupyter notebook --no-browser --ip=0.0.0.0 --allow-root
