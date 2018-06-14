@@ -7,7 +7,8 @@ WORKDIR /app
 # Copy the app code and dependencies file into the container at /app
 ADD . /app
 
-COPY Laboratorio.ipynb /app	
+COPY Laboratorio.ipynb /app
+COPY datasets /app
 
 RUN pip install -r requirements.txt
 

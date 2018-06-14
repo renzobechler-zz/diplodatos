@@ -7,3 +7,4 @@ ftfy
 scikit-learn 
 jupyter 
 seaborn 
+seaborn 
